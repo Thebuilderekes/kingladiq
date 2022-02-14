@@ -18,3 +18,35 @@ anime.timeline({loop: true})
     easing: "easeOutExpo",
     delay: 1000
   });
+
+
+  
+  const menuButton = document.getElementById("nav-menu");
+const navItems = document.getElementById("nav-menu-items-mobile");
+let clickCount = 'close';  // to set the state for the clicks to determine when to hide the navigation menu on click
+navItems.style.opacity= 0;
+
+
+menuButton.addEventListener("click",  function toggleMenu() {
+
+  // open navigation menu on click
+
+  if (clickCount  === 'close'){ ;
+
+        navItems.style.opacity= 1;
+        clickCount  = 'open'
+       }
+ // close navigation menu on click
+        else if (clickCount  === 'open'){ 
+          navItems.style.opacity= 0;
+          clickCount  = 'close'
+          
+            }
+
+        
+})
+
+
+
+
+

@@ -504,9 +504,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-width: 1px;
 }
 
-.bg-white {
+.bg-black {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .bg-nav-bg {
@@ -514,9 +514,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(51 54 63 / var(--tw-bg-opacity));
 }
 
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+.p-8 {
+  padding: 2rem;
 }
 
 .p-4 {
@@ -577,10 +576,20 @@ nav ul l{
   list-style: none;
 }
 
-nav ul li a{
+header nav #nav-menu-items-desktop li a {
+  color: white;
   text-decoration: none;
   padding: 0 10px;
   font-weight: 600;
+}
+
+header nav li a i {
+  padding: 0 10px;
+  color :white;
+}
+
+header nav #nav-menu-items-mobile{
+  display: none;
 }
 
 main {
@@ -595,7 +604,7 @@ span {
 h1{
   font-family: 'Archivo', sans-serif;
   color: #BCC6D1;
-  line-height: 1.5;
+  line-height: 1.8;
 }
 
 .button {
@@ -679,32 +688,43 @@ article button a {
 }
 
 @media only screen and (max-width: 890px){
+  header {
+    position: relative;
+  }
+
+  /* header .navbar-desktop {
+      justify-content: center;
+    } */
+
+  header nav #nav-menu-items-desktop {
+    display: none;
+  }
+
+  header nav #nav-menu-items-mobile {
+    display: block;
+    position:absolute;
+    top: 98%;
+    left: 0;
+    opacity: 0;
+    background: rgba(7, 7, 7, 0.514);
+    flex-direction: column;
+    z-index: 40;
+    transition: 0.6s all;
+  }
+
+  header nav #nav-menu-items-mobile li {
+    padding: 20px 20px;
+    color: white;
+  }
+
   section {
     flex-direction: column-reverse;
   }
 }
 
-@media (min-width: 640px) {
-  .sm\:text-4xl {
+@media (min-width: 320px) {
+  .xs\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .md\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
-  }
-}
-
-@media (min-width: 1024px) {
-  .lg\:justify-between {
-    justify-content: space-between;
-  }
-
-  .lg\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
   }
 }
