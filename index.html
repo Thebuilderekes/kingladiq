@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo&family=Archivo+Black&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>  
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+<script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="/src/input.css">
+    <link rel="stylesheet" href="/build/tailwind.css">
+
+</head>
+<body>
+    
+   <header>
+            <nav class=" flex lg:justify-between xs:justify-center p-4 bg-white items-center">
+
+                <a class="logo text-white font-bold" href=""><img src="images/ola-logo22.png" alt=""></a>
+
+                <ul class="flex items-center ">
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">MY VIDEOS</a></li>
+                    <li><a href="">CONTACT</a></li>
+                    <!-- <li>   <a class= "py-4"href=""> <img src="https://img.icons8.com/external-tal-revivo-regular-tal-revivo/48/000000/external-hamburger-menu-bar-with-parallel-navigation-button-basic-regular-tal-revivo.png"/></a></li> -->
+                </ul>
+
+            </nav>
+
+            <nav class="flex justify-center bg-nav-bg">
+                <a class= "py-4"href=""> <img src="https://img.icons8.com/external-tal-revivo-regular-tal-revivo/48/ffffff/external-hamburger-menu-bar-with-parallel-navigation-button-basic-regular-tal-revivo.png"/></a>
+        </nav>
+        
+   </header>
+ 
+
+   <main class="bg-black" >
+            <section class="hero-section w-full flex justify-between ">
+     
+
+                <article class="pl-16 pt-16">
+                    <span class="ml2 sm:text-4xl md:text-5xl lg:text-6xl"> Serido! 👋🏻</span>
+                    <h1 class="text-5xl  mt-8 tagline">I'm Olatunde <br>Ebinimiemi Oladimeji </h1>
+                    <h2  class="text-3xl text-white punchline">Master of Ceremony | Content creator  </h2>
+                    <button class="button mt-6 punchline"><a class="p-4" href="index.html">HIRE ME</a> 
+                    </button>
+              </article> 
+                    
+          <img class="tagline" src="images/ola-main1-removebg-preview.png" alt="the master of ceremony wearing a black toxedo"  >
+        </section>
+ </main>
+  <script src="/js/anime.js"></script>
+  <script>
+     ScrollReveal().reveal('.headline');
+ScrollReveal().reveal('.tagline', { delay: 500 });
+ScrollReveal().reveal('.punchline', { delay: 2000 });
+  </script>
+
+</body>
+</html>
