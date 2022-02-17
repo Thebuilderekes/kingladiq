@@ -468,12 +468,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
-.mt-8 {
-  margin-top: 2rem;
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
 }
 
-.mt-6 {
-  margin-top: 1.5rem;
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .flex {
@@ -502,6 +503,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .border {
   border-width: 1px;
+}
+
+.border-b-white {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .bg-black {
@@ -572,8 +578,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   box-sizing: border-box;
 }
 
+html, body {
+  width: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
 nav ul l{
   list-style: none;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  border-bottom: 1px solid #1a1a1a;
+  z-index: 30;
 }
 
 header nav #nav-menu-items-desktop li a {
@@ -586,6 +608,11 @@ header nav #nav-menu-items-desktop li a {
 header nav li a i {
   padding: 0 10px;
   color :white;
+}
+
+header .navbar-mobile {
+  display: none;
+  position: fixed;
 }
 
 header nav #nav-menu-items-mobile{
@@ -688,13 +715,9 @@ article button a {
 }
 
 @media only screen and (max-width: 890px){
-  header {
-    position: relative;
+  header .navbar-mobile {
+    display: block;
   }
-
-  /* header .navbar-desktop {
-      justify-content: center;
-    } */
 
   header nav #nav-menu-items-desktop {
     display: none;
@@ -703,7 +726,7 @@ article button a {
   header nav #nav-menu-items-mobile {
     display: block;
     position:absolute;
-    top: 98%;
+    top: 70%;
     left: 0;
     opacity: 0;
     background: rgba(7, 7, 7, 0.514);
@@ -713,7 +736,7 @@ article button a {
   }
 
   header nav #nav-menu-items-mobile li {
-    padding: 20px 20px;
+    padding: 20px 30px;
     color: white;
   }
 
