@@ -539,12 +539,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: space-evenly;
 }
 
+.gap-6 {
+  gap: 1.5rem;
+}
+
 .rounded-xl {
   border-radius: 0.75rem;
 }
 
 .border {
   border-width: 1px;
+}
+
+.border-gray-700 {
+  --tw-border-opacity: 1;
+  border-color: rgb(55 65 81 / var(--tw-border-opacity));
 }
 
 .bg-black {
@@ -566,8 +575,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 2rem;
 }
 
-.p-16 {
-  padding: 4rem;
+.p-6 {
+  padding: 1.5rem;
 }
 
 .p-4 {
@@ -582,6 +591,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .py-4 {
@@ -603,10 +617,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pb-2 {
   padding-bottom: 0.5rem;
-}
-
-.pt-40 {
-  padding-top: 10rem;
 }
 
 .text-center {
@@ -697,6 +707,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 html, body {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -755,10 +766,6 @@ header .nav-menu-items {
   padding: 30px 30px;
   font-family: 'Archivo Black', sans-serif;
   font-size: var(--medium-font-size);
-}
-
-.job-title {
-  font-family: 'Roboto', sans-serif;
 }
 
 ul li a i {
@@ -891,7 +898,7 @@ main {
   position: relative;
 }
 
-.what-i-do-section  article p {
+.services  article p {
   font-size: 18px;
   color: #1a1a1a;
 }
@@ -905,7 +912,7 @@ article a button {
   margin-top: 30px;
 }
 
-.what-i-do-section .cards {
+.services .cards {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -914,7 +921,7 @@ article a button {
 footer .social-icons li a i {
   color: #BCC6D1;
   font-size: 30px;
-  padding: 0 10px;
+  padding: 0 30px;
 }
 
 @media only screen and (max-width: 700px){
@@ -929,7 +936,7 @@ footer .social-icons li a i {
     background: rgba(0, 0, 0, 0.548);
   }
 
-  .what-i-do-section .cards {
+  .services .cards {
     flex-direction: column;
   }
 }
@@ -1025,7 +1032,8 @@ footer .social-icons li a i {
     position: absolute;
     top: 30%;
     height: 70%;
-    background: rgba(0, 0, 0, 0.548);
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.041) 0%, rgba(0,0,0,1) 78%, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%);
   }
 
   .slant-down {
@@ -1133,6 +1141,10 @@ footer .social-icons li a i {
     top: 3%;
     left: 6%;
   }
+
+  footer {
+    padding: 0 20px;
+  }
 }
 
 @media only screen and (max-width:375px) {
@@ -1144,11 +1156,8 @@ footer .social-icons li a i {
     position: absolute;
     top: 25%;
     height: 70%;
-    background: rgba(0, 0, 0, 0.308);
-  }
-
-  main {
-    padding-bottom: 40%;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.041) 0%, rgba(0,0,0,1) 78%, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%);
   }
 
   .slant-down {
@@ -1157,6 +1166,10 @@ footer .social-icons li a i {
     top: 39%;
     left: 85.5%;
     transition: 0.4s all;
+  }
+
+  footer {
+    padding: 0 20px;
   }
 }
 
@@ -1183,14 +1196,12 @@ footer .social-icons li a i {
   }
 
   .hero-section  article {
+    padding-top: 100px;
     position: absolute;
-    top: 25%;
+    top: 22%;
     height: 70%;
-    background: rgba(0, 0, 0, 0.308);
-  }
-
-  main {
-    padding-bottom: 40%;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.041) 0%, rgba(0,0,0,1) 78%, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%);
   }
 
   .slant-down {
@@ -1203,6 +1214,10 @@ footer .social-icons li a i {
   .slant-up {
     top: 3%;
     left: 6%;
+  }
+
+  footer {
+    padding: 0 20px;
   }
 }
 
@@ -1224,7 +1239,8 @@ footer .social-icons li a i {
     position: absolute;
     top: 25%;
     height: 70%;
-    background: rgba(0, 0, 0, 0.308);
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.041) 0%, rgba(0,0,0,1) 78%, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%);
   }
 
   main {
