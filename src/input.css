@@ -118,7 +118,7 @@ h1 {
 
 
 
-h2  {
+.services-header  {
 
   font-weight: bold;
   font-family: 'Archivo', sans-serif;
@@ -244,7 +244,7 @@ article a button {
 
 
 
-.services .cards {
+.services .services-cards {
 
   display: flex;
 justify-content: center;
@@ -277,7 +277,7 @@ footer .social-icons li a i {
       background: rgba(0, 0, 0, 0.548);
     }
 
-    .services .cards {
+    .services .services-cards {
 
          flex-direction: column;
     }

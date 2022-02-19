@@ -571,6 +571,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(5 5 5 / var(--tw-bg-opacity));
 }
 
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-gray-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
 .p-8 {
   padding: 2rem;
 }
@@ -680,6 +690,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-text-color {
   --tw-text-opacity: 1;
   color: rgb(188 198 209 / var(--tw-text-opacity));
+}
+
+.text-gray-200 {
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -793,7 +808,7 @@ h1 {
   line-height: 1.8;
 }
 
-h2  {
+.services-header  {
   font-weight: bold;
   font-family: 'Archivo', sans-serif;
 }
@@ -912,7 +927,7 @@ article a button {
   margin-top: 30px;
 }
 
-.services .cards {
+.services .services-cards {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -936,7 +951,7 @@ footer .social-icons li a i {
     background: rgba(0, 0, 0, 0.548);
   }
 
-  .services .cards {
+  .services .services-cards {
     flex-direction: column;
   }
 }
