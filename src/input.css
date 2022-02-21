@@ -227,6 +227,12 @@ a:hover {
 
 }
 
+/* .services article {
+
+  width: 33.33%;
+
+} */
+
  .services  article p {
   font-size: 18px;
   color: #1a1a1a;
@@ -241,19 +247,6 @@ article span {
 article a button {
   margin-top: 30px;
 }
-
-
-
-.services .services-cards {
-
-  display: flex;
-justify-content: center;
-align-items: center;
-
-}
-
-
-
 
 
 

@@ -565,24 +565,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-slate-400 {
+.bg-gray-200 {
   --tw-bg-opacity: 1;
-  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
 .bg-nav-bg {
   --tw-bg-opacity: 1;
   background-color: rgb(5 5 5 / var(--tw-bg-opacity));
-}
-
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-gray-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
 .p-8 {
@@ -666,14 +656,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(229 229 229 / var(--tw-text-opacity));
 }
 
-.text-white {
+.text-gray-200 {
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  color: rgb(229 231 235 / var(--tw-text-opacity));
 }
 
 .text-red-600 {
   --tw-text-opacity: 1;
   color: rgb(220 38 38 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .text-black {
@@ -694,11 +689,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-text-color {
   --tw-text-opacity: 1;
   color: rgb(188 198 209 / var(--tw-text-opacity));
-}
-
-.text-gray-200 {
-  --tw-text-opacity: 1;
-  color: rgb(229 231 235 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -917,6 +907,12 @@ main {
   position: relative;
 }
 
+/* .services article {
+
+  width: 33.33%;
+
+} */
+
 .services  article p {
   font-size: 18px;
   color: #1a1a1a;
@@ -929,12 +925,6 @@ article span {
 
 article a button {
   margin-top: 30px;
-}
-
-.services .services-cards {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 footer .social-icons li a i {
