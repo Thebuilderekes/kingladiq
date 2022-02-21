@@ -907,6 +907,10 @@ main {
   position: relative;
 }
 
+.home-main {
+  padding-bottom: 40%;
+}
+
 /* .services article {
 
   width: 33.33%;
