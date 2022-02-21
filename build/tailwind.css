@@ -511,10 +511,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 100%;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
 .w-screen {
   width: 100vw;
 }
@@ -537,6 +533,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
 }
 
 .justify-evenly {
@@ -649,6 +649,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.leading-loose {
+  line-height: 2;
+}
+
+.leading-6 {
+  line-height: 1.5rem;
 }
 
 .text-neutral-200 {
@@ -1090,10 +1098,6 @@ footer .social-icons li a i {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.041) 0%, rgba(0,0,0,1) 78%, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%);
   }
 
-  .home-main {
-    padding-bottom: 40%;
-  }
-
   .slant-down {
     transform: rotate(45deg);
     position: absolute;
@@ -1132,10 +1136,6 @@ footer .social-icons li a i {
     height: 70%;
     background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.041) 0%, rgba(0,0,0,1) 78%, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%);
-  }
-
-  .home-main {
-    padding-bottom: 40%;
   }
 
   .slant-down {
@@ -1250,10 +1250,6 @@ footer .social-icons li a i {
     height: 70%;
     background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.041) 0%, rgba(0,0,0,1) 78%, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%);
-  }
-
-  main {
-    padding-bottom: 40%;
   }
 
   .slant-down {

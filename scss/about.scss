@@ -13,6 +13,14 @@
  }
 
 
+ .about-section .about-section-text {
+    max-width: 55%;
+ }
+
+//  .about-section .about-section-text p {
+//     line-height: 1.6;
+//  }
+
 
 
  @media only screen and (max-width: 990px){
@@ -21,6 +29,11 @@
 
    flex-direction: column-reverse;
 }
+
+.about-section .about-section-text {
+   max-width: 1000%;
+}
+
 
 .about-section .about-section-text h2 {
 
