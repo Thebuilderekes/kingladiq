@@ -82,6 +82,13 @@ header .nav-menu-items {
    font-size: var(--medium-font-size);
 }
 
+  .nav-menu-link {
+
+    @apply  px-16 text-neutral-200 hover:text-text-color ;
+  }
+  
+
+
 
 ul li a i {
     color: #ffffff;
@@ -123,6 +130,9 @@ h1 {
   font-weight: bold;
   font-family: 'Archivo', sans-serif;
 }
+
+
+
 
 h3 {
   text-transform: uppercase;
@@ -229,12 +239,6 @@ a:hover {
 
 
 
-
-/* .services article {
-
-  width: 33.33%;
-
-} */
 
  .services  article p {
   font-size: 18px;
