@@ -6,8 +6,8 @@
 }
 
 .about-section .social-icons li a i {
-  color: #BCC6D1;
-  font-size: 30px;
+  color: #bcc6d1;
+  font-size: 100px;
   padding: 0 10px;
 }
 
@@ -23,10 +23,13 @@
             flex-direction: column-reverse;
   }
   .about-section .about-section-text {
-    max-width: 1000%;
+    max-width: 100%;
   }
   .about-section .about-section-text h2 {
     padding-top: 50px;
+  }
+  footer {
+    font-size: 14px;
   }
 }
 
@@ -41,6 +44,9 @@
             justify-content: space-between;
   }
   .about-section .about-section-text p {
+    font-size: 14px;
+  }
+  footer {
     font-size: 14px;
   }
 }

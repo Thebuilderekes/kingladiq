@@ -1,59 +1,50 @@
-
-*{
-   padding: 0;
-   margin: 0;
-   box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-
 .about-section .social-icons li a i {
-   color: #BCC6D1;
-   font-size: 30px;
-   padding: 0 10px;
- }
-
-
- .about-section .about-section-text {
-    max-width: 55%;
- }
-
-//  .about-section .about-section-text p {
-//     line-height: 1.6;
-//  }
-
-
-
- @media only screen and (max-width: 990px){
-
-.about-section {
-
-   flex-direction: column-reverse;
+  color: #bcc6d1;
+  font-size: 100px;
+  padding: 0 10px;
 }
 
 .about-section .about-section-text {
-   max-width: 1000%;
+  max-width: 55%;
 }
 
 
-.about-section .about-section-text h2 {
+@media only screen and (max-width: 990px) {
+  .about-section {
+    flex-direction: column-reverse;
+  }
 
-   padding-top: 50px;
+  .about-section .about-section-text {
+    max-width: 100%;
+  }
+
+  .about-section .about-section-text h2 {
+    padding-top: 50px;
+  }
+
+  footer {
+   font-size: 14px;
+}
 }
 
+@media only screen and (max-width: 400px) {
+  .about-section {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+
+  .about-section .about-section-text p {
+    font-size: 14px;
+  }
 
 
- }
-
-@media only screen and (max-width: 400px){  
-
-   .about-section {
-      flex-direction: column-reverse;
-   justify-content: space-between;
-   }
-
-
-   .about-section .about-section-text p {
-      font-size: 14px;
-   }
-
+  footer {
+     font-size: 14px;
+  }
 }
