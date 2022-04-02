@@ -8,9 +8,15 @@
   box-sizing: border-box;
 }
 
+::selection{
+
+  color: #055980;
+}
+
 html,
 body {
   overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
 
   scroll-behavior: smooth;
 }
@@ -35,6 +41,11 @@ header .navigation {
 
 header .navigation .social-icons li a {
   padding: 0 10px;
+}
+
+
+header .navigation .nav-menu .hamburger-menu {
+  display: none;
 }
 
 header .navigation .nav-menu .menu-line {
@@ -73,6 +84,10 @@ header .nav-menu-items {
   font-size: var(--medium-font-size);
 }
 
+.nav-menu-link-desktop {
+  @apply px-4 text-neutral-200 hover:text-textcolor;
+}
+
 .nav-menu-link {
   @apply px-16 text-neutral-200 hover:text-textcolor;
 }
@@ -98,7 +113,7 @@ ul li a i {
 }
 
 h1 {
-  font-family: "Archivo", sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #bcc6d1;
   line-height: 1.8;
 }
@@ -338,8 +353,9 @@ footer .social-icons li a i {
 
   .hero-section article {
     position: absolute;
-    top: 30%;
-    height: 70%;
+    width: 100%;
+    top: 23%;
+    height: 41%;
     background: rgb(0, 0, 0);
     background: linear-gradient(
       180deg,
@@ -392,6 +408,8 @@ footer .social-icons li a i {
     z-index: 20;
   }
 
+
+
   .nav-menu-items a {
     color: #ffffff;
     display: block;
@@ -400,23 +418,54 @@ footer .social-icons li a i {
     font-size: var(--medium-font-size);
   }
 
+ 
+
   .hero-section {
     flex-direction: column-reverse;
   }
 
   .hero-section article {
     position: absolute;
-    top: 30%;
-    height: 70%;
+    top: 23%;
+    width: 100%;
+    height: 38%;
     background: rgb(0, 0, 0);
-    background: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.041) 0%,
-      rgba(0, 0, 0, 1) 78%,
-      rgba(0, 0, 0, 1) 100%,
-      rgba(0, 0, 0, 1) 100%
-    );
+    background: linear-gradient( 180deg, rgba(0, 0, 0, 0.041) 0%, rgba(0, 0, 0, 1) 78%, rgba(0, 0, 0, 1) 100%, rgba(0, 0, 0, 1) 100% );
+}
   }
+
+  @media only screen and (max-width: 710px) {
+    header .nav-menu-items {
+      position: absolute;
+      left: -70%;
+      width: 50%;
+  
+      padding: 10px 0;
+      transition: 1.2s all;
+      z-index: 20;
+    }
+  
+    .nav-menu-items a {
+      color: #ffffff;
+      display: block;
+      padding: 30px 30px;
+      font-family: "Roboto", sans-serif;
+      font-size: var(--medium-font-size);
+    }
+  
+    .hero-section {
+      flex-direction: column-reverse;
+    }
+  
+    .hero-section article {
+      position: absolute;
+      top: 21%;
+      width: 100%;
+      height: 36%;
+      background: rgb(0, 0, 0);
+      background: linear-gradient( 180deg, rgba(0, 0, 0, 0.041) 0%, rgba(0, 0, 0, 1) 78%, rgba(0, 0, 0, 1) 100%, rgba(0, 0, 0, 1) 100% );
+  }
+   
 
   .slant-down {
     transform: rotate(45deg);
@@ -431,16 +480,32 @@ footer .social-icons li a i {
     left: 10%;
   }
 
-  .services .services-cards {
-    flex-direction: column;
   }
+
+  @media only screen and (max-width: 695px) {
+  .hero-section article {
+    position: absolute;
+    top: 18%;
+    width: 100%;
+    height: 32%;
+    background: rgb(0, 0, 0);
+    background: linear-gradient( 180deg, rgba(0, 0, 0, 0.041) 0%, rgba(0, 0, 0, 1) 78%, rgba(0, 0, 0, 1) 100%, rgba(0, 0, 0, 1) 100% );
+}
 }
 
-@media only screen and (max-width: 430px) {
-  .home-main {
-    padding-bottom: 20%;
-  }
+
+
+@media only screen and (max-width: 640px) {
+  .hero-section article {
+    position: absolute;
+    top: 14%;
+    width: 100%;
+    height: 26%;
+    background: rgb(0, 0, 0);
+    background: linear-gradient( 180deg, rgba(0, 0, 0, 0.041) 0%, rgba(0, 0, 0, 1) 78%, rgba(0, 0, 0, 1) 100%, rgba(0, 0, 0, 1) 100% );
 }
+}
+
 
 @media only screen and (max-width: 415px) {
   header .nav-menu-items {
@@ -451,6 +516,14 @@ footer .social-icons li a i {
     padding: 10px 0;
     transition: 1.2s all;
     z-index: 20;
+  }
+
+  header .navigation .nav-menu .hamburger-menu {
+    display: block;
+  }
+
+  header .navigation .nav-menu-items-desktop{
+    display: none;
   }
 
   .nav-menu-items a {
@@ -468,8 +541,8 @@ footer .social-icons li a i {
   .hero-section article {
     position: absolute;
     padding: 100px 25px;
-    top: 25%;
-    height: 70%;
+    top: 8%;
+    height: 26%;
     background: rgb(0, 0, 0);
     background: linear-gradient(
       180deg,
@@ -520,8 +593,8 @@ footer .social-icons li a i {
   .hero-section article {
     position: absolute;
     padding: 100px 25px;
-    top: 22%;
-    height: 70%;
+    top: 10%;
+    height: 23%;
     background: rgb(0, 0, 0);
     background: linear-gradient(
       180deg,
@@ -577,9 +650,7 @@ footer .social-icons li a i {
     transition: 0.4s all;
   }
 
-  .home-main {
-    padding-bottom: 40%;
-  }
+
 
   footer {
     padding: 0 20px;
@@ -612,8 +683,8 @@ footer .social-icons li a i {
   .hero-section article {
     padding-top: 100px;
     position: absolute;
-    top: 22%;
-    height: 70%;
+    top: 6%;
+    height: 25%;
     background: rgb(0, 0, 0);
     background: linear-gradient(
       180deg,
@@ -624,9 +695,7 @@ footer .social-icons li a i {
     );
   }
 
-  .home-main {
-    padding-bottom: 40%;
-  }
+
 
   .slant-down {
     transform: rotate(45deg);
@@ -688,9 +757,7 @@ footer .social-icons li a i {
     left: 6%;
   }
 
-  .home-main {
-    padding-bottom: 40%;
-  }
+
 }
 
 @media only screen and (max-width: 339px) {
@@ -710,8 +777,8 @@ footer .social-icons li a i {
 
   .hero-section article {
     position: absolute;
-    top: 22%;
-    height: 70%;
+    top: 5;
+    height: 22%;
     background: rgb(0, 0, 0);
     background: linear-gradient(
       180deg,
@@ -735,9 +802,35 @@ footer .social-icons li a i {
     left: 6%;
   }
 
-  .home-main {
-    padding-bottom: 55%;
-  }
+
+}
+
+
+@media only screen and (max-width: 320px) {
+
+main .hero-section article h1 {
+  font-size: 20px;
+
+}
+
+main .hero-section article h2 {
+  font-size: 24px;
+
+}
+
+main .hero-section article {
+  position: absolute;
+  top: 5;
+  height: 22%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.041) 0%,
+    rgba(0, 0, 0, 1) 78%,
+    rgba(0, 0, 0, 1) 100%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
 }
 
 

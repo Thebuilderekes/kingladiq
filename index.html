@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="page">
 
 <head>
   <meta charset="UTF-8" />
@@ -9,6 +9,9 @@
     content="Olatunde is a popular master of ceremonies and online content creator who specializes in creating the most exciting and enjoyable atmosphere at weddings, corperate functions and dinner parties.">
   <title>Olatunde Ebinimiemi Oladimeji | Master of Ceremonies</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Archivo&family=Archivo+Black&display=swap" rel="stylesheet" />
@@ -19,7 +22,7 @@
   <link rel="stylesheet" href="/build/tailwind.css" />
 </head>
 
-<body class="bg-black">
+<body class="bg-black" id="body">
 
   <div id="preloader"></div>
   <!----HEADER--->
@@ -43,22 +46,32 @@
 
       <!---------------NAVIGATION--------------------->
       <nav class="nav-menu" id="nav-menu">
+
+      
+        <div class="hamburger-menu">
         <!--- custom menu button made with 2 divs to animate and slant on click-->
         <div class="menu-line menu-line1" id="menu-line1"></div>
         <div class="menu-line menu-line2" id="menu-line2"></div>
         <!--- custom menu button made with 2 divs animate and slant on click ends-->
-
+      </div>
 
         <!--- slide out menu links-->
-        <div class="nav-menu-items bg-black" id="nav-menu-items">
+        <nav class="nav-menu-items bg-black" id="nav-menu-items">
           <!---menu links-->
-          <a class="nav-menu-link " href="index.html">Home</a>
-          <a class="nav-menu-link " href="/pages/about.html">About</a>
-          <a class="nav-menu-link " href="#services">My services</a>
+          <a class="nav-menu-link" href="index.html">Home</a>
+          <a class="nav-menu-link" href="/pages/about.html">About</a>
+          <a class="nav-menu-link" href="#services">My services</a>
           <a class="nav-menu-link" href="#footer-section">Contact</a>
-        </div>
+        </nav>
       </nav>
       <!--- Navigation ends-->
+      <nav class="nav-menu-items-desktop flex" id="nav-menu-items-desktop">
+        <!---menu links-->
+        <a class="nav-menu-link-desktop text-white" href="index.html">Home</a>
+        <a class="nav-menu-link-desktop text-white" href="/pages/about.html">About</a>
+        <a class="nav-menu-link-desktop text-white" href="#services">My services</a>
+        <a class="nav-menu-link-desktop text-white" href="#footer-section">Contact</a>
+      </nav>
 
     </div>
   </header>   <!----HEADER Ends--->
@@ -68,9 +81,9 @@
             <section class="hero-section w-full flex justify-evenly pt-32">
                     <article class="pl-16 pt-16">
                             <span class=" greeting ml2 xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl"> Serido! 👋🏻</span>
-                            <h1 class="leading-loose   text-4xl xs:text-5xl sm:text-2xl md:text-4xl mt-8 tagline"> Olatunde <br />Ebinimiemi
+                            <h1 class="leading-loose   xs:text-3xl sm:text-2xl md:text-4xl mt-8 tagline"> Olatunde <br />Ebinimiemi
                               Oladimeji </h1>
-                            <h2 class="xs:text-3xl sm:text-xl md:text-3xl lg:text-3xl text-gray-200 punchline"> Master of Ceremonies |
+                            <h2 class="xs:text-3xl sm:text-xl md:text-3xl lg:text-3xl text-gray-200 punchline"> Master of Ceremonies &
                               Content creator </h2>
                             <a class="pt-16 my-8 punchline2" href=" https://wa.me/message/PYP6ME5QLWVQE1">
                               <button class="button punchline">HIRE ME</button>
@@ -172,12 +185,19 @@
   </script>
 
   <script>
+
+const page = document.getElementById("page")
 window.addEventListener("load", function(){
     setInterval(appear, 3000);   
+    page.style.overflowY = "hidden";
 });
+
+page.style.overflowY = "scroll";
+
 function appear(){
     var load_screen = document.getElementById("preloader");
     document.body.removeChild(load_screen);
+    page.style.overflowY = "scroll";
 }
   </script>
 </body>
