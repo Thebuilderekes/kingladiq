@@ -1378,6 +1378,14 @@ footer .social-icons li a i {
     flex-direction: column-reverse;
   }
 
+  main .hero-section article h1 {
+    font-size: 20px;
+  }
+
+  main .hero-section article h2 {
+    font-size: 24px;
+  }
+
   .hero-section article {
     padding-top: 100px;
     position: absolute;
