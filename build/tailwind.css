@@ -1436,6 +1436,7 @@ footer .social-icons li a i {
   left: 0;
   width: 100%;
   height: 100vh;
+  overflow-y: hidden;
   z-index: 200;
 }
 
