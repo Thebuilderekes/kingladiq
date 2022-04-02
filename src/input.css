@@ -236,7 +236,7 @@ main .services .services-cards .article{
 }
 main .services article p {
   font-size: 18px;
-  color: #111111;
+  color: #3a3939;
 }
 
 main .hero-section article  .i-am {
@@ -694,7 +694,7 @@ footer .social-icons li a i {
     padding-top: 100px;
     position: absolute;
     top: 6%;
-    height: 25%;
+    height: 23%;
     background: rgb(0, 0, 0);
     background: linear-gradient(
       180deg,

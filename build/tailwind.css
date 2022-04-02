@@ -547,8 +547,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: space-evenly;
 }
 
-.gap-6 {
-  gap: 1.5rem;
+.gap-8 {
+  gap: 2rem;
 }
 
 .rounded-xl {
@@ -609,6 +609,21 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-16 {
   padding-left: 4rem;
   padding-right: 4rem;
+}
+
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
 .pt-32 {
@@ -955,7 +970,7 @@ main .services .services-cards .article{
 
 main .services article p {
   font-size: 18px;
-  color: #111111;
+  color: #3a3939;
 }
 
 main .hero-section article  .i-am {
@@ -1390,7 +1405,7 @@ footer .social-icons li a i {
     padding-top: 100px;
     position: absolute;
     top: 6%;
-    height: 25%;
+    height: 23%;
     background: rgb(0, 0, 0);
     background: linear-gradient(
       180deg,
