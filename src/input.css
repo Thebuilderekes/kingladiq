@@ -734,7 +734,7 @@ footer .social-icons li a i {
 
 #preloader { 
 background: #000000 url(/images/loader.gif) no-repeat center center;
-background-size: 15%;
+background-size: 25%;
 position: absolute;
 top: 0;
 left: 0;
