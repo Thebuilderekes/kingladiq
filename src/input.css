@@ -210,9 +210,18 @@ main {
   position: relative;
 }
 
+
+main .services .services-cards .article{
+  box-shadow: 3px 1px 5px 2px rgba(158,158,158,0.75);
+  -webkit-box-shadow: 3px 1px 5px 2px rgba(158,158,158,0.75);
+  -moz-box-shadow: 3px 1px 5px 2px rgba(158,158,158,0.75);box-shadow: 3px 1px 5px 2px rgba(158,158,158,0.75);
+-webkit-box-shadow: 3px 1px 5px 2px rgba(158,158,158,0.75);
+-moz-box-shadow: 3px 1px 5px 2px rgba(158,158,158,0.75);
+
+}
 main .services article p {
   font-size: 18px;
-  color: #1a1a1a;
+  color: #111111;
 }
 
 main .hero-section article  .i-am {
