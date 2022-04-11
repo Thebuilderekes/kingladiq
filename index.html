@@ -15,18 +15,36 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Archivo&family=Archivo+Black&display=swap" rel="stylesheet" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <script src="https://unpkg.com/scrollreveal"></script>
+
   <link rel="stylesheet" href="/src/input.css" />
   <link rel="stylesheet" href="/build/tailwind.css" />
+
+  <script>
+
+
+    window.addEventListener("load", function(){
+      intervalID = setInterval(appear, 3000);   
+        page.style.overflowY = "hidden";
+    });
+    
+    
+    
+    function appear(){
+      const body = document.getElementById("body")
+        const loadScreen = document.getElementById("preloader");
+        clearInterval(intervalID);
+        body.removeChild(body.firstElementChild);
+        page.style.overflowY = "scroll";
+      
+    }
+      </script>
 </head>
 
 <body class="bg-black" id="body">
 
   <div id="preloader"></div>
   <!----HEADER--->
-  <header class="fixed">
+  <header class="fixed nav-container">
     <div class="h-full navigation flex justify-between items-center p-8 bg-body fixed w-screen">
       <ul class="flex social-icons">
         <li class="social-icons-link">
@@ -72,7 +90,7 @@
         <a class="nav-menu-link-desktop text-white" href="#services">My services</a>
         <a class="nav-menu-link-desktop text-white" href="#footer-section">Contact</a>
       </nav>
-
+    </nav>
     </div>
   </header>   <!----HEADER Ends--->
 
@@ -102,8 +120,8 @@
                   <h2 class="services-header headline py-4 lg:text-6xl xs:text-4xl sm:text-3xl md:text-xl text-center mb-8"> MY SERVICES
                   </h2>
                   <div class="services-cards flex gap-8">
-                        <article class="article p-6 tagline border rounded-xl">
-                          <i class="fa fa-heart flex justify-center text-4xl text-red-600 p-4" aria-hidden="true"></i>
+                        <article class="article   p-6 tagline border rounded-xl">
+                          <i class="fa fa-heart flex  justify-center text-4xl text-red-600 p-4" aria-hidden="true"></i>
                           <h3 class="lg:text-2xl xs:text-xl sm:text-xl md:text-2xl text-center pb-2"> WEDDINGS </h3>
                           <p class="sm:leading-7  ">
                             Get your event turned up with lots of fun and exciting games. Keep your guests
@@ -168,15 +186,14 @@
   <script src="/js/menu.js"></script>
   <!----menu script---->
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-  <!----Anime js script---->
+
 
   <script src="/js/anime.js"></script>
   <!----Anime js script---->
 
   <script src="/js/script.js"></script>
   <!----Main js script---->
-
+  <script src="https://unpkg.com/scrollreveal"></script>
   <script>
     ScrollReveal().reveal(".headline");
     ScrollReveal().reveal(".tagline", { delay: 500 });
@@ -184,22 +201,7 @@
     ScrollReveal().reveal(".punchline2", { delay: 2500 });
   </script>
 
-  <script>
 
-const page = document.getElementById("page")
-window.addEventListener("load", function(){
-    setInterval(appear, 3000);   
-    page.style.overflowY = "hidden";
-});
-
-page.style.overflowY = "scroll";
-
-function appear(){
-    var load_screen = document.getElementById("preloader");
-    document.body.removeChild(load_screen);
-    page.style.overflowY = "scroll";
-}
-  </script>
 </body>
 
 </html>

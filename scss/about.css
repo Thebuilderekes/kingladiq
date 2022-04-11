@@ -5,6 +5,18 @@
           box-sizing: border-box;
 }
 
+body {
+  font-family: 'poppins' , sans-serif;
+}
+
+a:hover {
+  color: #1a1a1a;
+}
+
+p {
+  line-height: 1.7;
+}
+
 .about-section .social-icons li a i {
   color: #bcc6d1;
   font-size: 100px;

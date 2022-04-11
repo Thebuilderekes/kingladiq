@@ -12,43 +12,73 @@
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo&family=Archivo+Black&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/scss/about.css" />
 <link rel="stylesheet" href="../src/input.css" />
 <link rel="stylesheet" href="../build/tailwind.css" />
-<link rel="stylesheet" href="/scss/about.css" />
 <title>Olatunde Ebinimiemi Oladimeji -  About</title>
   </head>
 
   <body>
 
     <!----HEADER--->
-    <header class="fixed  ">
-            <div class=" h-full navigation flex justify-between items-center p-8 fixed w-screen">
-                    <ul class="flex social-icons">
-                      <li class="social-icons-link"><a href="tel: +2347035102078" target="_blank">    <i class="fa fa-phone "></i></a></li>
-                            <li class="social-icons-link"><a href="https://www.instagram.com/kingladiq/" target="_blank">    <i class="fa fa-instagram"></i></a></li>
-                            <li class="social-icons-link"><a href="">    <i class="fa fa-facebook"></i></a></li>
-                    </ul>
+    <header class="fixed nav-container">
+      <div class="h-full navigation flex justify-between items-center p-8 fixed w-screen">
+        <ul class="flex social-icons">
+          <li class="social-icons-link">
+            <a href="tel: +2347035102078" target="_blank">
+              <i class="fa fa-phone"></i></a>
+          </li>
+          <li class="social-icons-link">
+            <a href="https://www.instagram.com/kingladiq/" target="_blank">
+              <i class="fa fa-instagram"></i>
+            </a>
+          </li>
+          <li class="social-icons-link">
+            <a href=""> <i class="fa fa-facebook"></i></a>
+          </li>
+        </ul>
+  
+  
+        <!---------------NAVIGATION--------------------->
+        <nav class="nav-menu" id="nav-menu">
+  
         
-          <nav class="nav-menu" id="nav-menu">
-
-                  <div class="menu-line menu-line1" id="menu-line1"></div>            <!---menu button-->
-                  <div class="menu-line menu-line2" id="menu-line2"></div>   
-
-                  <div class="nav-menu-items bg-black" id="nav-menu-items">
-                          <a class="nav-menu-link " href="/index.html">Home</a>
-                          <a class="nav-menu-link" href="/pages/about.html">About</a>
-                          <a class="nav-menu-link " href="/index.html#services">My services</a>
-                          <a class="nav-menu-link "  href="#footer-section">Contact</a>
-              </div>  
+          <div class="hamburger-menu">
+          <!--- custom menu button made with 2 divs to animate and slant on click-->
+          <div class="menu-line menu-line1" id="menu-line1"></div>
+          <div class="menu-line menu-line2" id="menu-line2"></div>
+          <!--- custom menu button made with 2 divs animate and slant on click ends-->
+        </div>
+  
+          <!--- slide out menu links-->
+          <nav class="nav-menu-items bg-black" id="nav-menu-items">
+            <!---menu links-->
+            <a class="nav-menu-link" href="/index.html">Home</a>
+            <a class="nav-menu-link" href="about.html">About</a>
+            <a class="nav-menu-link" href="index.html#services">My services</a>
+            <a class="nav-menu-link" href="#footer-section">Contact</a>
           </nav>
-     </div> 
-</header> 
-
+      
+        <!--- Navigation ends-->
+        <nav class="nav-menu-items-desktop flex" id="nav-menu-items-desktop">
+          <!---menu links-->
+          <a class="nav-menu-link-desktop text-white" href="/index.html">Home</a>
+          <a class="nav-menu-link-desktop text-white" href="/pages/about.html">About</a>
+          <a class="nav-menu-link-desktop text-white" href="/index.html#services">My services</a>
+          <a class="nav-menu-link-desktop text-white" href="#footer-section">Contact</a>
+        </nav>
+      </nav>
+      </div>
+    </header>   <!----HEADER Ends--->
  <main>
           <section class="about-section flex justify-around items-center  bg-black  pt-32 px-8">
             <div class="about-section-text">

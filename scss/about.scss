@@ -4,10 +4,26 @@
   box-sizing: border-box;
 }
 
-.about-section .social-icons li a i {
+body {
+     font-family : 'poppins' , sans-serif;
+}
+
+a:hover {
+  color: #1a1a1a;
+}
+
+p{
+  line-height: 1.7;
+}
+
+.about-section {
+
+.social-icons li a i {
   color: #bcc6d1;
   font-size: 100px;
   padding: 0 10px;
+}
+
 }
 
 .about-section .about-section-text {
@@ -20,13 +36,21 @@
     flex-direction: column-reverse;
   }
 
-  .about-section .about-section-text {
+  .about-section { 
+  
+  .about-section-text {
     max-width: 100%;
   }
+  }
 
-  .about-section .about-section-text h2 {
+
+  .about-section {
+  
+  .about-section-text h2 {
     padding-top: 50px;
   }
+
+}
 
   footer {
    font-size: 14px;
@@ -39,9 +63,14 @@
     justify-content: space-between;
   }
 
-  .about-section .about-section-text p {
-    font-size: 14px;
+  .about-section {
+
+    .about-section-text p {
+      font-size: 14px;
+    }
   }
+  
+ 
 
 
   footer {
