@@ -14,7 +14,7 @@ menu.addEventListener("click",  function toggleMenu() {
   if (clickCount  === 'close'){ 
     firstMenuLine.classList.add("slant-down");
         secondMenuLine.classList.add("slant-up");
-        navItems.style.left = 0;
+        navItems.style.left = '0';
         navItems.style.display = "block"
         clickCount  = 'open'
         console.log("menu open")

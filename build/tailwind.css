@@ -1135,6 +1135,7 @@ footer .social-icons li a i {
 
   main .services .services-cards {
     flex-direction: column;
+    gap: 5rem;
   }
 }
 
