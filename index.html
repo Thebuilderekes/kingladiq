@@ -18,26 +18,43 @@
 
   <link rel="stylesheet" href="/src/input.css" />
   <link rel="stylesheet" href="/build/tailwind.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+
 
   <script>
 
 
-    window.addEventListener("load", function(){
-      intervalID = setInterval(appear, 3000);   
-        page.style.overflowY = "hidden";
+    window.addEventListener("load", function () {
+      intervalID = setInterval(appear, 3000);
+      page.style.overflowY = "hidden";
     });
-    
-    
-    
-    function appear(){
+
+
+
+    function appear() {
       const body = document.getElementById("body")
-        const loadScreen = document.getElementById("preloader");
-        clearInterval(intervalID);
-        body.removeChild(body.firstElementChild);
-        page.style.overflowY = "scroll";
-      
+      const loadScreen = document.getElementById("preloader");
+      clearInterval(intervalID);
+      body.removeChild(body.firstElementChild);
+      page.style.overflowY = "scroll";
+
     }
-      </script>
+
+
+  //   const nextButton = document.getElementById("swiper-button-next");
+  //  window.onload = function loop() {
+  //     setTimeout(function swipe() {
+  //       clickNext()
+  //       loop()
+  //     }, 2000); //9000 = 9000ms = 9s
+  //   }
+    
+  </script>
+
+
 </head>
 
 <body class="bg-black" id="body">
@@ -65,13 +82,13 @@
       <!---------------NAVIGATION--------------------->
       <nav class="nav-menu" id="nav-menu">
 
-      
-        <div class="hamburger-menu">
-        <!--- custom menu button made with 2 divs to animate and slant on click-->
-        <div class="menu-line menu-line1" id="menu-line1"></div>
-        <div class="menu-line menu-line2" id="menu-line2"></div>
-        <!--- custom menu button made with 2 divs animate and slant on click ends-->
-      </div>
+
+        <div class="hamburger-menu" id="hamburger-menu">
+          <!--- custom menu button made with 2 divs to animate and slant on click-->
+          <div class="menu-line menu-line1" id="menu-line1"></div>
+          <div class="menu-line menu-line2" id="menu-line2"></div>
+          <!--- custom menu button made with 2 divs animate and slant on click ends-->
+        </div>
 
         <!--- slide out menu links-->
         <nav class="nav-menu-items bg-black" id="nav-menu-items">
@@ -81,76 +98,108 @@
           <a class="nav-menu-link" href="#services">My services</a>
           <a class="nav-menu-link" href="#footer-section">Contact</a>
         </nav>
-    
-      <!--- Navigation ends-->
-      <nav class="nav-menu-items-desktop flex" id="nav-menu-items-desktop">
-        <!---menu links-->
-        <a class="nav-menu-link-desktop text-white" href="index.html">Home</a>
-        <a class="nav-menu-link-desktop text-white" href="/pages/about.html">About</a>
-        <a class="nav-menu-link-desktop text-white" href="#services">My services</a>
-        <a class="nav-menu-link-desktop text-white" href="#footer-section">Contact</a>
+
+        <!--- Navigation ends-->
+        <nav class="nav-menu-items-desktop flex" id="nav-menu-items-desktop">
+          <!---menu links-->
+          <a class="nav-menu-link-desktop text-white" href="index.html">Home</a>
+          <a class="nav-menu-link-desktop text-white" href="/pages/about.html">About</a>
+          <a class="nav-menu-link-desktop text-white" href="#services">My services</a>
+          <a class="nav-menu-link-desktop text-white" href="#footer-section">Contact</a>
+        </nav>
       </nav>
-    </nav>
     </div>
-  </header>   <!----HEADER Ends--->
+  </header>
+  <!----HEADER Ends--->
 
 
   <main class="bg-black home-main">
-            <section class="hero-section w-full flex justify-evenly pt-32">
-                    <article class="pl-16 pt-16">
-                            <span class=" greeting ml2 xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl"> Serido! 👋🏻</span>
-                            <h1 class="leading-loose   xs:text-3xl sm:text-2xl md:text-4xl mt-8 tagline"> <span class ="text-white text-xl">My name is </span>Olatunde <br />Ebinimiemi
-                              Oladimeji </h1>
-                            <h2 class="xs:text-3xl sm:text-xl md:text-3xl lg:text-3xl text-gray-200 punchline"> Master of Ceremonies &
-                              Content creator </h2>
-                            <a class="pt-16 my-8 punchline2" href=" https://wa.me/message/PYP6ME5QLWVQE1">
-                              <button class="button punchline">HIRE ME</button>
-                            </a>
-                    </article>
+    <section class="hero-section w-full flex justify-evenly pt-32">
+      <article class="pl-16 pt-16">
+        <span class=" greeting ml2 xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl"> Serido! 👋🏻</span>
+        <h1 class="leading-loose   xs:text-3xl sm:text-2xl md:text-4xl mt-8 tagline"> <span
+            class="text-white text-xl">My name is </span>Olatunde <br />Ebinimiemi
+          Oladimeji </h1>
+        <h2 class="xs:text-3xl sm:text-xl md:text-3xl lg:text-3xl text-gray-200 punchline"> Master of Ceremonies &
+          Content creator </h2>
+        <a class="pt-16 my-8 punchline2" href=" https://wa.me/message/PYP6ME5QLWVQE1">
+          <button class="button punchline">HIRE ME</button>
+        </a>
+      </article>
 
-              <!------Hero image---------->
-              <img class="tagline" src="/images/ola-main1-removebg-preview.png"
-                alt="the master of ceremony wearing a black toxedo" />
-            </section>
+      <!------Hero image---------->
+      <img class="tagline" src="/images/ola-main1-removebg-preview.png"
+        alt="the master of ceremony wearing a black toxedo" />
+    </section>
 
 
 
-          <!----SERVICES SECTION---->
-          <section class="services py-24 px-8 bg-gray-200" id="services">
-                  <h2 class="services-header headline py-4 lg:text-6xl xs:text-4xl sm:text-3xl md:text-xl text-center mb-8"> MY SERVICES
-                  </h2>
-                  <div class="services-cards flex gap-8">
-                        <article class="article   p-6 tagline border rounded-xl">
-                          <i class="fa fa-heart flex  justify-center text-4xl text-red-600 p-4" aria-hidden="true"></i>
-                          <h3 class="lg:text-2xl xs:text-xl sm:text-xl md:text-2xl text-center pb-2"> WEDDINGS </h3>
-                          <p class="sm:leading-7  ">
-                            Get your event turned up with lots of fun and exciting games. Keep your guests
-                            highly engaged during your event. Make your event the talk of the town.
-                          </p>
-                        </article>
+    <!----SERVICES SECTION---->
+    <section class="services py-24 px-8 bg-gray-200" id="services">
+      <h2 class="services-header headline py-4 lg:text-6xl xs:text-4xl sm:text-3xl md:text-xl text-center mb-8"> MY
+        SERVICES
+      </h2>
+      <div class="services-cards flex gap-8">
+        <article class="article   p-6 tagline border rounded-xl">
+          <i class="fa fa-heart flex  justify-center text-4xl text-red-600 p-4" aria-hidden="true"></i>
+          <h3 class="lg:text-2xl xs:text-xl sm:text-xl md:text-2xl text-center pb-2"> WEDDINGS </h3>
+          <p class="sm:leading-7  ">
+            Get your event turned up with lots of fun and exciting games. Keep your guests
+            highly engaged during your event. Make your event the talk of the town.
+          </p>
+        </article>
 
-                        <article class="tagline article p-6 border rounded-xl">
-                                <i class="fa fa-suitcase flex justify-center text-4xl text-black p-4" aria-hidden="true "></i>
-                                <h3 class="lg:text-2xl xs:text-xl sm:text-xl md:text-2xl text-center pb-2"> CORPERATE FUNCTIONS </h3>
-                                <p class="sm:leading-7 ">
-                                  Events for networking and fundraising, as well as team building are
-                                  important for growth in any company and I create the atmosphere for achieving the best outcomes in such
-                                  events.
-                                </p>
-                        </article>
+        <article class="tagline article p-6 border rounded-xl">
+          <i class="fa fa-suitcase flex justify-center text-4xl text-black p-4" aria-hidden="true "></i>
+          <h3 class="lg:text-2xl xs:text-xl sm:text-xl md:text-2xl text-center pb-2"> CORPERATE FUNCTIONS </h3>
+          <p class="sm:leading-7 ">
+            Events for networking and fundraising, as well as team building are
+            important for growth in any company and I create the atmosphere for achieving the best outcomes in such
+            events.
+          </p>
+        </article>
 
-                        <article class="tagline article p-6 border rounded-xl">
-                              <i class="fa fa-glass flex justify-center text-4xl text-red-500 p-4" aria-hidden="true"></i>
-                              <h3 class="lg:text-2xl xs:text-xl sm:text-xl md:text-2xl text-center pb-2"> DINNER PARTIES</h3>
-                              <p class="sm:leading-7 ">
-                                Good music and good food always
-                                goes well with great conversations between family, friends and colleagues. I can help you host a memorable and enjoyable evening for everyone attending your party.
-                              </p>
-                        </article>
-                  </div>
-          </section>
-  <!----Services section ends--->
-</main>
+        <article class="tagline article p-6 border rounded-xl">
+          <i class="fa fa-glass flex justify-center text-4xl text-red-500 p-4" aria-hidden="true"></i>
+          <h3 class="lg:text-2xl xs:text-xl sm:text-xl md:text-2xl text-center pb-2"> DINNER PARTIES</h3>
+          <p class="sm:leading-7 ">
+            Good music and good food always
+            goes well with great conversations between family, friends and colleagues. I can help you host a memorable
+            and enjoyable evening for everyone attending your party.
+          </p>
+        </article>
+      </div>
+    </section>
+    <!----Services section ends--->
+
+    <!-- Slider main container -->
+<!--     
+    <section class="gallery py-16">
+
+      <h2
+        class="services-header text-textcolor headline py-4 lg:text-6xl xs:text-4xl sm:text-3xl md:text-xl text-center mb-8">
+        GALLERY
+      </h2>
+      <div class="swiper">
+
+        <div class="swiper-wrapper">
+        
+          <div class="swiper-slide"><img src="/images/ola-about.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="/images/ola-about.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="/images/ola-about.jpg" alt=""></div>
+      
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+    
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next" id="swiper-button-next"></div>
+        <div class="swiper-scrollbar"></div>
+      </div>
+
+    </section> -->
+  </main>
 
   <!----FOOTER SECTION--------->
   <footer class="bg-nav-bg text-gray-200 text-sm text-center mt-0 mb-0 mx-auto my-auto pt-16" id="footer-section">
@@ -160,19 +209,19 @@
     </a>
 
     <div class="social-icons flex justify-center mb-8">
-          <ul class="flex social-icons">
-                <li class="social-icons-link">
-                  <a href="tel: +2347035102078" target="_blank">
-                    <i class="fa fa-phone"></i></a>
-                </li>
-                <li class="social-icons-link">
-                  <a href="https://www.instagram.com/kingladiq/" target="_blank">
-                    <i class="fa fa-instagram"></i></a>
-                </li>
-                <li class="social-icons-link">
-                  <a href=""> <i class="fa fa-facebook"></i></a>
-                </li>
-          </ul>
+      <ul class="flex social-icons">
+        <li class="social-icons-link">
+          <a href="tel: +2347035102078" target="_blank">
+            <i class="fa fa-phone"></i></a>
+        </li>
+        <li class="social-icons-link">
+          <a href="https://www.instagram.com/kingladiq/" target="_blank">
+            <i class="fa fa-instagram"></i></a>
+        </li>
+        <li class="social-icons-link">
+          <a href=""> <i class="fa fa-facebook"></i></a>
+        </li>
+      </ul>
     </div>
 
     &copy; 2022. Olatunde Ebinimiemi Oladimeji. All rights reserved. <br />
@@ -188,10 +237,10 @@
 
 
 
-  <script src="/js/anime.js"></script>
+  <!-- <script src="/js/anime.js"></script> -->
   <!----Anime js script---->
 
-  <script src="/js/script.js"></script>
+  <!-- <script src="/js/script.js"></script> -->
   <!----Main js script---->
   <script src="https://unpkg.com/scrollreveal"></script>
   <script>
@@ -201,6 +250,7 @@
     ScrollReveal().reveal(".punchline2", { delay: 2500 });
   </script>
 
+  <script src="/js/swiper.js"></script>
 
 </body>
 

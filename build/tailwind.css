@@ -468,6 +468,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 320px) {
+  .container {
+    max-width: 320px;
+  }
+}
+
 .fixed {
   position: fixed;
 }
@@ -601,6 +611,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 1rem;
 }
 
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -680,14 +695,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
-.text-yellow-500 {
-  --tw-text-opacity: 1;
-  color: rgb(234 179 8 / var(--tw-text-opacity));
-}
-
 .text-textcolor {
   --tw-text-opacity: 1;
   color: rgb(188 198 209 / var(--tw-text-opacity));
+}
+
+.text-yellow-500 {
+  --tw-text-opacity: 1;
+  color: rgb(234 179 8 / var(--tw-text-opacity));
 }
 
 .text-neutral-200 {
@@ -990,6 +1005,11 @@ main .hero-section article a button {
   margin-top: 30px;
 }
 
+.swiper {
+  width:  60%;
+  height: 10%;
+}
+
 /*========footer styles=============*/
 
 footer .social-icons li a i {
@@ -1088,8 +1108,8 @@ footer .social-icons li a i {
   .hero-section article {
     position: absolute;
     width: 100%;
-    top: 23%;
-    height: 28%;
+    top: 15%;
+    height: 24%;
     background: rgb(0, 0, 0);
     background: linear-gradient(
       180deg,
@@ -1103,8 +1123,8 @@ footer .social-icons li a i {
   .slant-down {
     transform: rotate(45deg);
     position: absolute;
-    top: 44%;
-    left: 93.5%;
+    top: 39%;
+    left: 85.5%;
     transition: 0.4s all;
   }
 
@@ -1140,7 +1160,7 @@ footer .social-icons li a i {
     flex-direction: column-reverse;
   }
 
-  .hero-section article {
+  /* .hero-section article {
     position: absolute;
     top: 23%;
     width: 100%;
@@ -1153,7 +1173,7 @@ footer .social-icons li a i {
       rgba(0, 0, 0, 1) 100%,
       rgba(0, 0, 0, 1) 100%
     );
-  }
+  } */
 }
 
 @media only screen and (max-width: 750px) {
@@ -1173,7 +1193,7 @@ footer .social-icons li a i {
   }
 }
 
-@media only screen and (max-width: 700px) {
+/* @media only screen and (max-width: 700px) {
   .hero-section article {
     position: absolute;
     width: 100%;
@@ -1188,14 +1208,14 @@ footer .social-icons li a i {
       rgba(0, 0, 0, 1) 100%
     );
   }
-}
+} */
 
 @media only screen and (max-width: 695px) {
   .hero-section article {
     position: absolute;
-    top: 18%;
+    top: 12%;
     width: 100%;
-    height: 30%;
+    height: 33%;
     background: rgb(0, 0, 0);
     background: linear-gradient(
       180deg,
@@ -1207,12 +1227,12 @@ footer .social-icons li a i {
   }
 }
 
-@media only screen and (max-width: 640px) {
+/* @media only screen and (max-width: 640px) {
   .hero-section article {
     position: absolute;
     top: 14%;
     width: 100%;
-    height: 32%;
+    height: 23%;
     background: rgb(0, 0, 0);
     background: linear-gradient(
       180deg,
@@ -1222,14 +1242,14 @@ footer .social-icons li a i {
       rgba(0, 0, 0, 1) 100%
     );
   }
-}
+} */
 
 @media only screen and (max-width: 600px) {
   .hero-section article {
     position: absolute;
-    top: 14%;
+    top: 12%;
     width: 100%;
-    height: 28%;
+    height: 31%;
     background: rgb(0, 0, 0);
     background: linear-gradient(
       180deg,
@@ -1241,12 +1261,12 @@ footer .social-icons li a i {
   }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 500px) {
   .hero-section article {
     position: absolute;
-    top: 14%;
+    top: 12%;
     width: 100%;
-    height: 26%;
+    height: 25%;
     background: rgb(0, 0, 0);
     background: linear-gradient(
       180deg,
@@ -1270,8 +1290,8 @@ footer .social-icons li a i {
   .hero-section article {
     position: absolute;
     padding: 100px 25px;
-    top: 8%;
-    height: 26%;
+    top: 10%;
+    height: 25%;
     background: rgb(0, 0, 0);
     background: linear-gradient(
       180deg,
@@ -1315,9 +1335,8 @@ footer .social-icons li a i {
 
   .hero-section article {
     position: absolute;
-    padding: 100px 25px;
     top: 8%;
-    height: 26%;
+    height: 25%;
     background: rgb(0, 0, 0);
     background: linear-gradient(
       180deg,
@@ -1332,7 +1351,7 @@ footer .social-icons li a i {
     transform: rotate(45deg);
     position: absolute;
     top: 38%;
-    left: 84%;
+    left: 85%;
     transition: 0.4s all;
   }
 
@@ -1364,11 +1383,10 @@ footer .social-icons li a i {
     flex-direction: column-reverse;
   }
 
-  .hero-section article {
+  /* .hero-section article {
     position: absolute;
-    padding: 100px 25px;
-    top: 10%;
-    height: 23%;
+    top: 7%;
+    height: 19%;
     background: rgb(0, 0, 0);
     background: linear-gradient(
       180deg,
@@ -1377,7 +1395,7 @@ footer .social-icons li a i {
       rgba(0, 0, 0, 1) 100%,
       rgba(0, 0, 0, 1) 100%
     );
-  }
+  } */
 
   .slant-down {
     transform: rotate(45deg);
@@ -1451,19 +1469,11 @@ footer .social-icons li a i {
     flex-direction: column-reverse;
   }
 
-  main .hero-section article h1 {
-    font-size: 20px;
-  }
-
-  main .hero-section article h2 {
-    font-size: 24px;
-  }
-
   .hero-section article {
-    padding-top: 100px;
+    width: 100%;
     position: absolute;
-    top: 6%;
-    height: 23%;
+    top: 9%;
+    height: 22%;
     background: rgb(0, 0, 0);
     background: linear-gradient(
       180deg,
@@ -1472,6 +1482,14 @@ footer .social-icons li a i {
       rgba(0, 0, 0, 1) 100%,
       rgba(0, 0, 0, 1) 100%
     );
+  }
+
+  main .hero-section article h1 {
+    font-size: 20px;
+  }
+
+  main .hero-section article h2 {
+    font-size: 24px;
   }
 
   .slant-down {
@@ -1534,48 +1552,6 @@ footer .social-icons li a i {
   }
 }
 
-@media only screen and (max-width: 300px) {
-  header .nav-menu-items {
-    position: absolute;
-    left: -70%;
-    width: 50%;
-    padding: 10px 0;
-    transition: 1.2s all;
-    z-index: 20;
-  }
-
-  .hero-section {
-    flex-direction: column-reverse;
-  }
-
-  .hero-section article {
-    position: absolute;
-    top: 5;
-    height: 22%;
-    background: rgb(0, 0, 0);
-    background: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.041) 0%,
-      rgba(0, 0, 0, 1) 78%,
-      rgba(0, 0, 0, 1) 100%,
-      rgba(0, 0, 0, 1) 100%
-    );
-  }
-
-  .slant-down {
-    transform: rotate(45deg);
-    position: absolute;
-    top: 39%;
-    left: 83%;
-    transition: 0.4s all;
-  }
-
-  .slant-up {
-    top: 3%;
-    left: 6%;
-  }
-}
-
 @media only screen and (max-width: 320px) {
   main .hero-section article h1 {
     font-size: 20px;
@@ -1597,6 +1573,47 @@ footer .social-icons li a i {
       rgba(0, 0, 0, 1) 100%,
       rgba(0, 0, 0, 1) 100%
     );
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  header .nav-menu-items {
+    position: absolute;
+    left: -70%;
+    width: 50%;
+    padding: 10px 0;
+    transition: 1.2s all;
+    z-index: 20;
+  }
+
+  .hero-section {
+    flex-direction: column-reverse;
+  }
+
+  .hero-section article {
+    position: absolute;
+    height: 17%;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.041) 0%,
+      rgba(0, 0, 0, 1) 78%,
+      rgba(0, 0, 0, 1) 100%,
+      rgba(0, 0, 0, 1) 100%
+    );
+  }
+
+  .slant-down {
+    transform: rotate(45deg);
+    position: absolute;
+    top: 39%;
+    left: 83%;
+    transition: 0.4s all;
+  }
+
+  .slant-up {
+    top: 3%;
+    left: 6%;
   }
 }
 

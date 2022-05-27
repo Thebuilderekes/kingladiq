@@ -1,9 +1,10 @@
-const menu = document.getElementById("nav-menu");
+const menu = document.getElementById("hamburger-menu");
 const firstMenuLine = document.getElementById("menu-line1");
 const secondMenuLine = document.getElementById("menu-line2");
 const  navItems = document.getElementById("nav-menu-items");
 const body = document.getElementById("body")
-let clickCount = 'close';  // to set the state for the clicks to determine when to hide the navigation menu on click
+let clickCount = 'close'; 
+ // to set the state for the clicks to determine when to hide the navigation menu on click
 
 
 menu.addEventListener("click",  function toggleMenu() {
@@ -16,6 +17,7 @@ menu.addEventListener("click",  function toggleMenu() {
         navItems.style.left = 0;
         navItems.style.display = "block"
         clickCount  = 'open'
+        console.log("menu open")
        }
  // close navigation menu on click
         else if (clickCount  === 'open'){ 
